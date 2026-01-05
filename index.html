@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 B. Sy</title>
+
+    <list rel="stylesheet" href="https://pyscript.net/release/2024.1.1/core.css">
+          <script type="module" src="https://pyscript.net/release/2024.11/core.js"></script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        max-width: 400px;
+        margin: auto;
+        border: 1px solid rgb(223, 80, 111);
+        border-radius: 10px;
+        background-color: whitesmoke;
+        box-shadow: 0 0 10px rgb(223, 80, 111);
+        margin-top: 75px;
+    }
+    h2 {
+        text-align: center;
+        color: crimson;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+    button{
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(223, 80, 111);
+        color: whitesmoke;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(223, 80, 111);
+    }
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    #average, #result {
+        font-weight: bold;
+        color: whitesmoke;
+    }
+</style>
+
+</head>
+<body>
+        <h2>Simple Average Calculator</h2>
+
+        <p>Score 1:</p>
+        <input id="score1" type="text">
+
+        <p>Score 2:</p>
+        <input id="score2" type="text">
+
+        <button py-clock="compute_average">Compute</button>
+
+        <p>Average: <span id="average"></span></p>
+        <p>Passed? <span id="result"></span></p>
+
+        <script type="py" src="main.py"></script>
+</body>
+</html>
